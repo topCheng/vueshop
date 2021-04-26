@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Shop</title>
+    <script src="<%= BASE_URL %>js/flexible.js"></script>
+    <style>
+        .load {
+            width: .6rem;
+            height: .6rem;
+            background-image: url("<%= BASE_URL %>images/load.gif");
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            z-index: 10000;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50% -50%);
+            -moz-transform: translate(-50% -50%);
+            -ms-transform: translate(-50% -50%);
+            -o-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <div class="load"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
